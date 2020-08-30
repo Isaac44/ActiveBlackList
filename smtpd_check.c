@@ -42,7 +42,7 @@ static int check_spam(char *acount id, char *endSpam)
 	mysql_init(&DBCon); // init the connection
 	
 	// Connect to the DB
-	mysql_real_connect(&DBCon, 	"hostIP", "user ", "password", "db ", 0, NULL, 0);
+	mysql_real_connect(&DBCon, "hostIP", "user ", "password", "db ", 0, NULL, 0);
 	
 	// Query
 	mysql_query(&DBCon, sql);
